@@ -1,0 +1,226 @@
+:root {
+    --primary-red: hsl(7, 99%, 70%);
+    --primary-yellow: hsl(51, 100%, 49%);
+    --primary-graphic-text: hsl(167, 40%, 24%);
+    --primary-dark-blue: hsl(198, 62%, 26%);
+    --primary-light-green: hsl(168, 34%, 41%);
+
+    --secondary-desaturated-blue: hsl(212, 27%, 19%);
+    --secondary-very-dark-grey-blue: hsl(213, 9%, 39%);
+    --secondary-dark-grey-blue: hsl(232, 10%, 55%);
+    --secondary-gray-blue: hsl(210, 4%, 67%);
+    --secondary-white: hsl(0, 0%, 100%);
+
+
+    --dodger-blue: rgb(60,190,255);
+    --transparent-red: hsla(7, 99%, 70%, 0.4);
+    --transparent-yellow: hsl(51, 100%, 49%, 0.4);
+
+    --ff-primary: "Barlow", san-serif;
+    --ff-secondary: "Fraunces", san-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* typography */
+html,
+body {
+    font-size:  1.25vw; /* 18px */
+    font-family: var(--ff-primary);
+}
+
+body,
+h1,h2, h3, h4, h5 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: var(--ff-secondary);
+    font-size: 3vw;
+    font-weight: 900;
+    color: var(--primary-dark-blue);
+}
+
+ h3, h4, h5 {
+    font-size: 2vw;
+    font-family: var(--ff-secondary);
+    font-weight: 700;
+    color: var(--primary-dark-blue);
+
+}
+
+p {
+    font-family: var(--ff-primary);
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--secondary-gray-blue);
+}
+a {
+    color: var(--primary-dark-blue);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 5px;
+}
+
+
+/* Header/navigation */
+header {
+    color: #fff;
+    font-family: var(--ff-secondary);
+    margin-bottom: -0.30rem;
+}
+header > div {
+    position: absolute;
+    top: 20vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+.arrow {
+    text-align: center;
+    font-size: 7rem;
+    position: absolute;
+    left: 45%;
+}
+nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+#logo {
+    margin: auto 0;
+    width: 15%;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li {
+    padding: 1rem 1.5rem;
+}
+li:hover {
+    background-color: var(--secondary-white);
+    border-radius: 2rem;
+    color: var(--primary-graphic-text);
+}
+
+/* images */
+img {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-light-green);
+    color: var(--primary-graphic-text);
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+}
+
+.flex-row {
+    display:flex;
+    flex-direction: row;
+}
+.flex-row > div {
+    width: 50%;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.graphic-design,
+.photography {
+    position: relative;
+}
+
+.graphic-design > div, .photography > div {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: var(--primary-graphic-text);
+}
+.graphic-design  p, .photography  p {
+    color: var(--primary-graphic-text);
+}
+
+.testimonials {
+    padding: 5rem 0;
+}
+.testimonials > h4 {
+    text-align: center;
+    color: var(--secondary-gray-blue);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 2rem 0;
+
+}
+.testimonials > div {
+    display: flex;
+    padding: 1rem 1rem;
+}
+
+.testimonials > div  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.testimonials  img {
+    width: 5vw;
+    border-radius: 50%;
+}
+
+/* aux classes */
+.light-green-bg {
+    background-color: var(--primary-light-green);
+}
+.yellow-bg {
+    background-color: var(--primary-yellow);
+}
+
+.red-bg {
+    background-color: var(--primary-red);
+}
+
+.yellow-underline {
+    text-decoration: underline solid var(--transparent-yellow) 5px;
+
+}
+.yellow-underline:hover {
+    text-decoration: underline solid var(--primary-yellow) 5px;
+}
+.red-underline {
+    text-decoration: underline solid var(--transparent-red) 5px;
+}
+.red-underline:hover {
+    text-decoration: underline solid var(--primary-red) 5px;
+}
+
