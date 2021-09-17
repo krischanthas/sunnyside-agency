@@ -232,7 +232,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
 }
 
 .testimonials img {
@@ -318,7 +318,6 @@ footer {
   .testimonials > div {
     flex-direction: column;
     text-align: center;
-    padding: 0 10rem;
   }
   .testimonials > div > div {
     padding: 2rem 0;
