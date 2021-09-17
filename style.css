@@ -63,7 +63,7 @@ h5 {
 
 p {
   font-family: var(--ff-primary);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: normal;
   color: var(--secondary-gray-blue);
 }
@@ -198,9 +198,8 @@ footer {
 
 .graphic-design > div,
 .photography > div {
-  font-size: 10%;
   position: absolute;
-  width: 50%;
+  width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
@@ -210,6 +209,7 @@ footer {
 .graphic-design p,
 .photography p {
   color: var(--primary-graphic-text);
+  font-size: 70%;
 }
 
 /*  Testimonials */
